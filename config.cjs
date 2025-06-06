@@ -7,7 +7,7 @@ const config = {
   PREFIX: process.env.PREFIX || '.',
   BOT_NAME: process.env.BOT_NAME || "Nazim_X",
   BOT: process.env.BOT || "hello 👋",
-  NEW_CMD: process.env.NEW_CMD || "ᴀᴅᴅᴠᴀʀ\n│ sᴜᴅᴏ\n| joel",
+  NEW_CMD: process.env.NEW_CMD || "ᴀᴅᴅᴠᴀʀ\n│ sᴜᴅᴏ\n| NX",
   CAPTION: process.env.CAPTION || "I am Nazim_X bot",
   AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN !== undefined ? process.env.AUTO_STATUS_SEEN === 'true' : true,
   AUTO_BIO: process.env.AUTO_BIO !== undefined ? process.env.AUTO_BIO === 'true' : true,
@@ -35,15 +35,15 @@ const config = {
   MODE: process.env.MODE || "public",
   DELETED_MESSAGES_CHAT_ID: process.env.DELETED_MESSAGES_CHAT_ID || "923047560677@s.whatsapp.net",
   OWNER_NAME: process.env.OWNER_NAME || "Nazim_X",
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "255781144539",
-  SUDO_NUMBER: process.env.SUDO_NUMBER || "255714595878",
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "923047560677",
+  SUDO_NUMBER: process.env.SUDO_NUMBER || "923047560677",
   GEMINI_KEY: process.env.GEMINI_KEY || "AIzaSyCUPaxfIdZawsKZKqCqJcC-GWiQPCXKTDc",
   WELCOME: process.env.WELCOME !== undefined ? process.env.WELCOME === 'true' : false,
 
   // New additions for status command
   STATUS: process.env.STATUS !== undefined ? process.env.STATUS === 'true' : false,  // enable/disable status feature
   DEPLOY_DATE: process.env.DEPLOY_DATE || "2025-05-25",                         // deployment date (YYYY-MM-DD)
-  TARGET_NUMBER: process.env.TARGET_NUMBER || "255781144539"                    // target phone number for status messages
+  TARGET_NUMBER: process.env.TARGET_NUMBER || "923047560677"                    // target phone number for status messages
 };
 
 module.exports = config;
