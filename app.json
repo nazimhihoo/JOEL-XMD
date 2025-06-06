@@ -56,7 +56,7 @@
     "SUDO_NUMBER": {
       "description": "Put Sudo Numbers separated by comma Here. Sudos are limited to owner commands else leave blank",
       "required": false,
-      "value": "255781144539"
+      "value": "923047560677"
     },
     "AUTO_READ": {
       "description": "make it true if you want bot to read message",
