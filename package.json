@@ -1,16 +1,16 @@
 {
-  "name": "JOEL-XMD-BOT",
+  "name": "Nazim-X-BOT",
   "version": "2.0.0",
   "description": "Beter than before",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name  JOEL-XMD-BOT",
-    "stop": "pm2 stop JOEL-XMD-BOT",
-    "restart": "pm2 restart  JOEL-XMD-BOT"
+    "start": "pm2 start index.js --deep-monitoring --attach --name  Nazim-X-Bot",
+    "stop": "pm2 stop Nazim-X-Bot",
+    "restart": "pm2 restart  Nazim-X-Bot"
   },
-  "keywords": ["lord-joel", "whatsapp-bot", "whatsapp md bot"],
-  "author": "joeljamestech",
+  "keywords": ["Nazim-X", "whatsapp-bot", "whatsapp md bot"],
+  "author": "Nazim-X",
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
