@@ -1,6 +1,6 @@
 {
-    "bot-name": "JOEL-XMD",
-    "description": "Whiskey Sockets Baileys Whatsapp bot By joeljamestech",
+    "bot-name": "Nazim-X",
+    "description": "Whiskey Sockets Baileys Whatsapp bot By Nazim-X",
     "logo": "https://raw.githubusercontent.com/joeljamestech2/JOEL-XMD/refs/heads/main/mydata/media/joelXbot.jpg",
     "keywords": ["bot"],
     "documentation-link": "https://joel-xmd-pair-joelbot-d392f3b60559.herokuapp.com/",
@@ -34,7 +34,7 @@
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "255714595078"
+      "value": "923047560677"
 
     }, 
 
