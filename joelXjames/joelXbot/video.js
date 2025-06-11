@@ -82,8 +82,8 @@ const videoCommand = async (m, sock) => {
 Powered by lord joel`,
       contextInfo: {
         externalAdReply: {
-          title: title,
-          body: "Streaming via JOEL XMD Bot",
+          title: `JOEL XMD YT MENU`,
+          body: "Streaming via joel Xmd bot",
           thumbnailUrl: joelThumbnail,
           sourceUrl: vid.url,
           mediaType: 1,
@@ -100,7 +100,7 @@ Powered by lord joel`,
     await sock.sendMessage(m.from, {
       video: { url: download_url },
       mimetype: "video/mp4",
-      caption: "```now playing ↻ ◁ II ▷ ↺```",
+      caption: "```joel Xmd bot by lord joel```",
       thumbnail: joelThumbnail,
       contextInfo: {
         forwardedNewsletterMessageInfo: {
