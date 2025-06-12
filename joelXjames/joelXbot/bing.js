@@ -1,5 +1,5 @@
 import config from '../../config.cjs';
-
+//lord joel 
 const bingHandler = async (m, sock) => {
   const prefix = config.PREFIX;
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(" ")[0].toLowerCase() : "";
