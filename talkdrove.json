@@ -1,10 +1,10 @@
 {
     "bot-name": "Nazim-X",
-    "description": "Whiskey Sockets Baileys Whatsapp bot By Nazim-X",
-    "logo": "https://raw.githubusercontent.com/joeljamestech2/JOEL-XMD/refs/heads/main/mydata/media/joelXbot.jpg",
+    "description": "Whatsapp bot By Nazim-X",
+    "logo": "https://files.catbox.moe/fhk2br.jpg",
     "keywords": ["bot"],
     "documentation-link": "https://joel-xmd-pair-joelbot-d392f3b60559.herokuapp.com/",
-    "owner-verification": "rastadeconcave@gmail.com",
+    "owner-verification": "muhammadnazimrind@gmail.com",
   
     "env": {
       "SESSION_ID": {
@@ -21,20 +21,20 @@
     "MODE": {
       "description": "select your bot work type public-private-inbox-group.",
       "required": false,
-      "value": "public"
+      "value": "private"
       
     },
     
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "LORD JOEL"
+      "value": "Nazim_X"
 }, 
 
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "923047560677"
+      "value": "923701335041"
 
     }, 
 
