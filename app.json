@@ -1,10 +1,10 @@
 {
-  "name": "ᴊᴏᴇʟ xᴍᴅ ʙᴏᴛ",
-  "description": "ᴀ ᴊᴀᴠᴀsᴄʀɪᴘᴛ ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ",
+  "name": "Nazim_X_bot",
+  "description": "hi there i am Nazim_X",
   "keywords": [
     "whatsapp bot"
   ],
-  "logo":"https://raw.githubusercontent.com/joeljamestech2/JOEL-XMD/refs/heads/main/mydata/media/thumbnail.jpg",
+  "logo":"https://files.catbox.moe/fhk2br.jpg",
   "repository": "https://github.com/joeljamestech/JOEL-MD",
   "stack": "container",
   "env": { 
@@ -30,7 +30,7 @@
     },
     "CHAT_BOT": {
       "description": "Make it true if you want to enable chatbot",
-      "required": false,
+      "required": true,
       "value": "false"
     },
     "ANTI_DELETE": {
@@ -56,7 +56,7 @@
     "SUDO_NUMBER": {
       "description": "Put Sudo Numbers separated by comma Here. Sudos are limited to owner commands else leave blank",
       "required": false,
-      "value": "923047560677"
+      "value": "923701335041"
     },
     "AUTO_READ": {
       "description": "make it true if you want bot to read message",
@@ -96,7 +96,7 @@
     "TIMEZONE": {
       "description": "inset your time zone eg. Africa/Dar_es_Salaam",
       "required": false,
-      "value": "Africa/Dar_es_Salaam"
+      "value": "pakistan/Islamabad"
       },
     "DEPLOY_DATE": {
       "description": "a deployment date in (YYYY-MM-DD) eg. 2025-05-25",
@@ -111,7 +111,7 @@
     "BOTREPLY": {
       "description": "make it true if you want a bot to reply some messages ",
       "required": false,
-      "value": "false" 
+      "value": "true" 
       },
     "ANTILINK": {
       "description": "make it true if you want to enable auto delete links",
