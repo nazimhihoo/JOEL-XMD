@@ -108,6 +108,11 @@
       "required": false,
       "value": "" 
       },
+    "BOTREPLY": {
+      "description": "make it true if you want a bot to reply some messages ",
+      "required": false,
+      "value": "false" 
+      },
     "ANTILINK": {
       "description": "make it true if you want to enable auto delete links",
       "required": false,
