@@ -1,7 +1,7 @@
 {
   "name": "Nazim-X-BOT",
   "version": "2.0.0",
-  "description": "Beter than before",
+  "description": "Beter than before, your dad *NX*",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "stop": "pm2 stop Nazim-X-Bot",
     "restart": "pm2 restart  Nazim-X-Bot"
   },
-  "keywords": ["Nazim-X", "whatsapp-bot", "whatsapp md bot"],
+  "keywords": ["Nazim-X", "whatsapp-bot", "whatsapp NX bot"],
   "author": "Nazim-X",
   "license": "ISC",
   "dependencies": {
