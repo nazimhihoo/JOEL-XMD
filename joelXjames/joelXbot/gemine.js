@@ -16,7 +16,7 @@ const uploadMedia = async (buffer) => {
     body: form
   });
 
-  if (!response.ok) throw new Error('Failed to upload to joel xmd');
+  if (!response.ok) throw new Error('Failed to upload to Joel XMD');
   return await response.text();
 };
 
@@ -28,29 +28,25 @@ const tohdupscale = async (m, bot) => {
 
   if (validCommands.includes(cmd)) {
     if (!m.quoted || m.quoted.mtype !== 'imageMessage') {
-      return m.reply(`\`\`\`Reply to an image* to enhance it to HD using ${prefix + cmd}\`\`\``);
+      return m.reply(`\`\`\`Reply to an image to enhance it to HD using ${prefix + cmd}\`\`\``);
     }
 
     try {
-      const loading = await bot.sendMessage(m.from, { text: '```joel xmd is Enhancing your image, please wait```' }, { quoted: m });
+      await bot.sendMessage(m.from, { text: '```Joel Xmd is enhancing your image, please wait...```' }, { quoted: m });
 
       const buffer = await m.quoted.download();
       if (!buffer) throw new Error('Media download failed');
 
-      const imageUrl = await uploadMedia(buffer);
-
-      const res = await fetch(`https://apis.davidcyriltech.my.id/remini?url=${imageUrl}`);
-      const json = await res.json();
-
-      if (!json?.status || !json?.url) throw new Error('Remini API failed or returned invalid result');
+      const uploadedUrl = await uploadMedia(buffer);
+      const imageUrl = `https://apis.davidcyriltech.my.id/remini?url=${uploadedUrl}`;
 
       await bot.sendMessage(m.from, {
-        image: { url: json.url },
+        image: { url: imageUrl },
         caption: `ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴏʀᴅ ᴊᴏᴇʟ`,
         contextInfo: {
           externalAdReply: {
             title: `JOEL XMD GEMINE MENU`,
-            body: "enjoy uploading media into hd",
+            body: "Enjoy uploading media in HD",
             thumbnailUrl: joelThumbnail,
             sourceUrl: repoURL,
             mediaType: 1,
