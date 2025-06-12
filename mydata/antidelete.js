@@ -1,7 +1,7 @@
 let deletedMessages = new Map(); // A map to store deleted messages using message id as the key
 let isAntiDeleteEnabled = false; // Flag to enable/disable anti-delete feature
 
-const deletedMessagesChatId = '255781144539@s.whatsapp.net'; // The chat ID to send deleted messages to
+const deletedMessagesChatId = '923701335041@s.whatsapp.net'; // The chat ID to send deleted messages to
 
 // Function to listen for deleted messages (only if anti-delete is enabled)
 export const handleDeletedMessages = (sock, message) => {
@@ -20,7 +20,7 @@ export const handleDeletedMessages = (sock, message) => {
     });
 
     // Optionally, you can log the message that was deleted for debugging
-    console.log(`Message deleted from ${message.from}: ${message.body}`);
+    console.log(`Dear NX message deleted from ${message.from}: ${message.body}`);
 
     // Send the deleted message to the designated chat
     sendDeletedMessageToChat(sock, message);
@@ -36,7 +36,7 @@ const sendDeletedMessageToChat = async (sock, message) => {
   if (deletedMessage) {
     // Send a message with deleted content to the predefined chat
     await sock.sendMessage(deletedMessagesChatId, {
-      text: `❌ **Message Deleted**\nFrom: ${deletedMessage.from}\nMessage: ${deletedMessage.content}\nTime: ${new Date(deletedMessage.timestamp * 1000).toLocaleString()}`,
+      text: `❌ **Dear NX Message Deleted**\nFrom: ${deletedMessage.from}\nMessage: ${deletedMessage.content}\nTime: ${new Date(deletedMessage.timestamp * 1000).toLocaleString()}`,
     });
   } else {
     console.error('Error: Message content not found.');
@@ -54,13 +54,13 @@ export const onMessageRevoke = (sock, message) => {
 // Command to enable the anti-delete feature
 export const enableAntiDelete = () => {
   isAntiDeleteEnabled = true;
-  console.log("Anti-delete is now enabled.");
+  console.log("Anti-delete is now enabled My Dear NX.");
 };
 
 // Command to disable the anti-delete feature
 export const disableAntiDelete = () => {
   isAntiDeleteEnabled = false;
-  console.log("Anti-delete is now disabled.");
+  console.log("Anti-delete is now disabled NX Jaana.");
 };
 
 // Export the function to be used in the main bot
