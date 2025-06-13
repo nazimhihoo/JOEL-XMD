@@ -86,20 +86,20 @@ const deepseek = async (m, Matrix) => {
 
             // Replace identity phrases
             answer = answer
-                .replace(/I am a large language model, trained by Google\.?/gi, "I am Joel XMD bot, trained by Lord Joel.")
+                .replace(/I am a large language model, trained by Google\.?/gi, "I am joel Xmd bot, trained by Lord Joel.")
                 .replace(/by Google/gi, "by Lord Joel")
-                .replace(/large language model/gi, "Joel XMD bot");
+                .replace(/large language model/gi, "joel Xmd bot");
 
             await updateChatHistory(chatHistory, m.sender, { role: "user", content: prompt });
             await updateChatHistory(chatHistory, m.sender, { role: "assistant", content: answer });
 
             await Matrix.sendMessage(m.from, {
-                text: `\`\`\`${answer}\`\`\``,
+                text: `${answer}`,
                 contextInfo: {
                     externalAdReply: {
                         title: 'JOEL XMD AI',
                         body: 'Chat with joel assistant anytime',
-                        thumbnailUrl: "https://i.imgur.com/ltZ6QqT.jpg",
+                        thumbnailUrl: "https://raw.githubusercontent.com/joeljamestech2/JOEL-XMD/refs/heads/main/mydata/media/thumbnail.jpg",
                         sourceUrl: "https://github.com/joeljamestech/JOEL-XMD",
                         mediaType: 1,
                         renderLargerThumbnail: true,
