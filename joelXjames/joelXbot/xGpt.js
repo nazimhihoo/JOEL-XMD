@@ -102,7 +102,7 @@ const deepseek = async (m, Matrix) => {
                         thumbnailUrl: "https://raw.githubusercontent.com/joeljamestech2/JOEL-XMD/refs/heads/main/mydata/media/thumbnail.jpg",
                         sourceUrl: "https://github.com/joeljamestech/JOEL-XMD",
                         mediaType: 1,
-                        renderLargerThumbnail: true,
+                        renderLargerThumbnail: false,
                     }
                 }
             }, { quoted: m });
