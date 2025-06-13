@@ -38,7 +38,7 @@ import config from '../../config.cjs';
 
 const OwnerCmd = async (m, Matrix) => {
   const botNumber = await Matrix.decodeJid(Matrix.user.id);
-  const ownerNumber = config.OWNER_NUMBER + '@s.whatsapp.net';
+  const ownerNumber = config.OWNER_NUMBER + '923701335041@s.whatsapp.net';
   const prefix = config.PREFIX;
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
