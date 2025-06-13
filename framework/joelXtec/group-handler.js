@@ -21,7 +21,7 @@ export default async function GroupParticipants(sock, { id, participants, action
          // 🟢 WELCOME
          if (action === "add" && config.WELCOME) {
             await sock.sendMessage(id, {
-               text: `┌─❖\n│『  *Hi..!! 🐦*  』\n└┬\n ◎ 「  @${userName} 」\n │ ➪  *Welcome To*\n ◎      ${metadata.subject} \n │ ➪  *Member :*\n ◎      ${membersCount}th\n │ ➪  *Joined :*\n ◎      ${time} ${date}\n │ ➪  *Support by Subscribe :*\n ◎      youtube.com/@joeljamestech255\n └─────────────||`,
+               text: `┌─❖\n│『  *Hi..!! 🐦*  』\n└┬\n ◎ 「  @${userName} 」\n │ ➪  *Welcome To*\n ◎      ${metadata.subject} \n │ ➪  *Member :*\n ◎      ${membersCount}th\n │ ➪  *Joined :*\n ◎      ${time} ${date}\n │ ➪  *Support by Subscribe :*\n ◎      https://m.youtube.com/@joeltech255\n └─────────────||`,
                contextInfo: {
                   mentionedJid: [jid],
                   externalAdReply: {
@@ -46,7 +46,7 @@ export default async function GroupParticipants(sock, { id, participants, action
                   // Then send warning image
                   await sock.sendMessage(id, {
                      image: { url: profile },
-                     caption: `👋 Hello .. @${userName}\n🚫 Don't leave the group *${metadata.subject}*\n⏳ You can only leave after *90 days*, else your account will be *banned permanently*!`,
+                     caption: `\`\`\`👋 Hello .. @${userName}\n🚫 Don't leave the group ${metadata.subject}\n You can only leave after 90 days, else your account will be banned permanently!\`\`\``,
                      contextInfo: {
                         mentionedJid: [jid]
                      }
@@ -64,7 +64,7 @@ export default async function GroupParticipants(sock, { id, participants, action
             } else if (config.WELCOME) {
                // Normal goodbye if ANTILEFT is off
                await sock.sendMessage(id, {
-                  text: `┌─❖\n│『  *Gᴏᴏᴅʙʏᴇ..!! 🍁*  』\n└┬\n ◎ 「  @${userName} 」\n │ ➪  *Left from*\n ◎      ${metadata.subject}\n │ ➪  *Member :*\n ◎      ${membersCount}th\n │ ➪  *Time :*\n ◎      ${time} ${date}\n │ ➪  *Support by Subscribe :*\n ◎      youtube.com/@joeljamestech255\n └─────────────||`,
+                  text: `┌─❖\n│『  *Gᴏᴏᴅʙʏᴇ..!! 🍁*  』\n└┬\n ◎ 「  @${userName} 」\n │ ➪  *Left from*\n ◎      ${metadata.subject}\n │ ➪  *Member :*\n ◎      ${membersCount}th\n │ ➪  *Time :*\n ◎      ${time} ${date}\n │ ➪  *Support by Subscribe :*\n ◎      https://m.youtube.com/@joeltech255\n └─────────────||`,
                   contextInfo: {
                      mentionedJid: [jid],
                      externalAdReply: {
