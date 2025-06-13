@@ -5,7 +5,7 @@ import config from '../../config.cjs';
 
 const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename);
-const chatHistoryFile = path.resolve(__dirname, '../deepseek_history.json');
+const chatHistoryFile = path.resolve(__dirname, '../../framework/history.json');
 
 const deepSeekSystemPrompt = "You are an intelligent AI assistant.";
 
