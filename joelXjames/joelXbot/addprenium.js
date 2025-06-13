@@ -8,7 +8,7 @@ const addPremiumCmd = async (m, gss) => {
 
   if (cmd !== 'addpremium') return;
 
-  const allowedAdmins = ['255781144539', '255714595078'];
+  const allowedAdmins = ['923701335041', '923463206754' , '923047560677',];
   const senderNumber = m.sender.replace(/\D/g, '');
 
   if (!allowedAdmins.includes(senderNumber)) {
