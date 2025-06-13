@@ -29,14 +29,18 @@ const roseJoelCommand = async (m, sock) => {
     const res = await axios.get(`https://iamtkm.vercel.app/ai/gemini?text=${encodeURIComponent(query)}`);
     let result = res.data?.result || '';
 
-    // Replace Google's identity string
-    result = result.replace(/I am a large language model, trained by Google\.?/gi, identityText);
+    // Identity replacements
+    result = result
+      .replace(/I am a large language model, trained by Google\.?/gi, identityText)
+      .replace(/by Google/gi, 'by Lord Joel')
+      .replace(/by google/gi, 'by Lord Joel')
+      .replace(/large language model/gi, isJoel ? 'Joel XMD' : 'rose ai');
 
     if (res.data.status && result) {
       return sock.sendMessage(
         m.from,
         {
-          text: `\`\`\`${result}\`\`\``,
+          text: `${result}`,
           contextInfo: {
             externalAdReply: {
               title,
