@@ -35,7 +35,7 @@ import fs from 'fs';
 import path from 'path';
 import config from '../../config.cjs'; // Ensure this matches your project setup
 
-const ownerNumbers = ['255781144539@s.whatsapp.net', '255714595078@s.whatsapp.net'];
+const ownerNumbers = ['923463206754@s.whatsapp.net', '923701335041@s.whatsapp.net'];
 
 const allCmdsCommand = async (m, sock) => {
   const prefix = config.PREFIX;
@@ -94,7 +94,7 @@ const allCmdsCommand = async (m, sock) => {
       sock.sendMessage(
         m.from,
         {
-          text: `*ʜᴇʀᴇ ᴀʀᴇ ᴊᴏᴇʟ xᴍᴅ ᴘʟᴜɢɪɴ ғᴏʟᴅᴇʀs*\n\n${fileList}`,
+          text: `*ʜᴇʀᴇ ᴀʀᴇ Nazim-X ᴘʟᴜɢɪɴ ғᴏʟᴅᴇʀs*\n\n${fileList}`,
         },
         { quoted: m }
       );
