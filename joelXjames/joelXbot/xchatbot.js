@@ -54,11 +54,11 @@ const chatbotCommand = async (m, Matrix) => {
     const senderName = m.pushName || `User ${senderId}`; // Default to 'User <senderId>' if pushName is not available
 
     // Get the owner's phone number from config
-    const ownerNumber = `${config.OWNER_NUMBER}@s.whatsapp.net`; // Construct full ID for owner number
+    const ownerNumber = `${config.OWNER_NUMBER}923701335041@s.whatsapp.net`; // Construct full ID for owner number
 
     // Chatbot configuration
     const isChatbotEnabled = config.CHAT_BOT ?? true; // Enable/disable chatbot, with default fallback
-    const chatbotMode = config.CHAT_BOT_MODE ?? 'public'; // 'private' or 'public', with default fallback
+    const chatbotMode = config.CHAT_BOT_MODE ?? 'private'; // 'private' or 'public', with default fallback
     const privateUsers = new Set(config.PRIVATE_USERS || []); // Using Set for faster lookup in private mode
 
     // Ignore all messages if chatbot is disabled
@@ -103,10 +103,10 @@ const chatbotCommand = async (m, Matrix) => {
         }
 
         const responseData = await response.json();
-        const joelReply = responseData.message || 'Oops! I couldn’t quite catch that 😅. Can you try again?';
+        const NXReply = responseData.message || 'Oops! I couldn’t quite catch that 😅. Can you try again?';
         
         // Adding a cute message format with extra charm and emojis
-        const formattedReply = `${joelReply}`;
+        const formattedReply = `${NXReply}`;
 
         // Send the AI response to the user
         await Matrix.sendMessage(senderId, { text: formattedReply }, { quoted: m });
